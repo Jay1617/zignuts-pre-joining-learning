@@ -25,7 +25,7 @@ This file is a part of my learning journey as I explore **Git** and **GitHub**.
 
 ```text
 GitHub Repo → Clone → Make Changes → Add → Commit → Push
-
+```
 ---
 
 ## 💡 Commands I'm Practicing
@@ -92,5 +92,5 @@ git commit -m "Your commit message"
 
 # Pull the latest changes from remote to local
 git pull origin main
-
+```
 
