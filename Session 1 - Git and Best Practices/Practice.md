@@ -92,5 +92,18 @@ git commit -m "Your commit message"
 
 # Pull the latest changes from remote to local
 git pull origin main
+
+
+
+#Undoing changes
+# 1. Staged changes - changes that we have add
+git reset file-name
+git reset  #reset changes from all changes file
+
+# 2. Commited changes - for one commit
+git reste HEAD~1
+
+# 3. Commited changes - for many commits
+git reset commit-hash
 ```
 
