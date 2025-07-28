@@ -94,7 +94,3 @@ git commit -m "Your commit message"
 git pull origin main
 
 
-
----
-
-Let me know if you want to add GitHub Desktop usage, pull requests, GitHub Actions, or more visuals next!
