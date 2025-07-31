@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+</head>
+
+<body>
+    <div>
+        <h1>Travelling Location Form</h1>
+        <form>
+            <input type="text" placeholder="Enter Your Name"><br>
+            <label for="genderM">
+                <input type="radio" value="Male" name="gender" id="genderM">Male
+            </label>
+            <label for="genderF">
+                <input type="radio" value="Female" name="gender" id="genderF">Female
+            </label>><br>
+            <input type="checkbox" name="18+" id="adult" class="red blue">
+            <label for="adult">Are You 18+?</label><br>
+            <input type="email" placeholder="Enter Your E-mail id"><br>
+            Which Location do yo want to go?
+            <select name="destination" id="destination">
+                <option value="no destination">Select Your destination</option>
+                <option value="maldives">Maldives</option>
+                <option value="goa">Goa</option>
+                <option value="russia">Russia</option>
+            </select><br>
+            <textarea name="expirience" id="expirience" cols="30" rows="10" placeholder="Tell Us Your expirience">
+            </textarea>
+        </form>
+        <hr><hr>
+    </div>
+</body>
+
+</html>
