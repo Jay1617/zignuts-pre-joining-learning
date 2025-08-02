@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.card {
+  border: 1px solid #333;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.card {
+  background-color: 1rem;
+  font-size: 1.5rem;
+}
+
+.navbar {
+  background-color: black;
+}
+.navbar ul {
+  list-style: none;
+}
+.navbar ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+}
+.navbar ul li a:hover {
+  color: gray;
+}
+
+.btn-primary {
+  padding: 1rem;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn-secondary {
+  padding: 1rem;
+  background-color: gray;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(102.5, 102.5, 102.5);
+}/*# sourceMappingURL=main.css.map */

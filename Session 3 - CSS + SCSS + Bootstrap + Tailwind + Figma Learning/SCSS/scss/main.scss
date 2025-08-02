@@ -1,0 +1,57 @@
+@import 'variables';
+@import 'reset';
+
+@mixin button-style($bg-color) {
+  padding: $padding;
+  background-color: $bg-color;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+@function darken-color($color) {
+  @return darken($color, 10%);
+}
+
+%box {
+  border: 1px solid $text-color;
+  padding: $padding;
+  margin: $margin;
+}
+
+.card {
+  @extend %box;
+  background-color: map-get($font-sizes, med);
+  font-size: map-get($font-sizes, large);
+}
+
+.navbar {
+  background-color: $primary-color;
+
+  ul {
+    list-style: none;
+
+    li {
+      display: inline-block;
+      margin-right: 10px;
+
+      a {
+        color: white;
+        text-decoration: none;
+
+        &:hover {
+          color: $secondary-color;
+        }
+      }
+    }
+  }
+}
+
+.btn-primary {
+  @include button-style($primary-color);
+}
+
+.btn-secondary {
+  @include button-style($secondary-color);
+  background-color: darken-color($secondary-color);
+}
