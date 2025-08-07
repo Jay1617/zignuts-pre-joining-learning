@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jadoo - Travel Agency</title>
+    <link rel="stylesheet" href="./main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+
+  <body class="relative">
+    <main class="relative w-full max-h-screen bg-white overflow-hidden">
+      <!-- Background Image -->
+
+      <img
+        src="./assets/images/decore.png"
+        alt="Background"
+        class="absolute w-[766px] h-[700px] -top-[60px] left-[51.5%] -z-1 pointer-events-none select-none"
+      />
+
+      <!-- Header -->
+      <header
+        class="max-w-[1160.58px] mx-auto mt-[47px] flex items-center justify-between px-0 relative"
+      >
+        <!-- Logo -->
+        <div class="flex items-center">
+          <img
+            src="./assets/images/Logo.png"
+            alt="Jadoo"
+            class="w-[114.91px] h-[33.99px]"
+          />
+        </div>
+
+        <!-- Navigation -->
+        <nav class="hidden md:flex items-center space-x-8">
+          <div
+            class="flex space-x-12 text-[#212832] font-[600] leading-[100%] font-google-sans"
+          >
+            <a href="#" class="hover:text-primary-orange transition-colors"
+              >Destinations</a
+            >
+            <a href="#" class="hover:text-primary-orange transition-colors"
+              >Hotels</a
+            >
+            <a href="#" class="hover:text-primary-orange transition-colors"
+              >Flights</a
+            >
+            <a href="#" class="hover:text-primary-orange transition-colors"
+              >Bookings</a
+            >
+          </div>
+
+          <div
+            class="flex items-center space-x-10 text-[#212832] font-[600] leading-[100%] font-google-sans pl-10"
+          >
+            <a
+              href="#"
+              class="text-[#212832] font-[600] hover:text-primary-orange transition-colors"
+              >Login</a
+            >
+            <button
+              class="px-6 py-2 border border-primary-blue text-primary-blue rounded-md hover:bg-primary-blue hover:text-white transition-all"
+            >
+              Sign up
+            </button>
+            <select
+              class="bg-transparent font-[600] outline-none cursor-pointer"
+            >
+              <option value="EN">EN</option>
+              <option value="HIN">HIN</option>
+              <option value="SP">SP</option>
+            </select>
+          </div>
+        </nav>
+      </header>
+
+      <!-- Hero Section -->
+      <section
+        class="max-w-7xl mx-auto px-4 py-12 flex flex-col lg:flex-row items-center"
+      >
+        <!-- Left Side -->
+        <div class="lg:w-1/2 space-y-6 lg:pr-12 top-[217px] left-[148px]">
+          <p
+            class="w-[410px] h-[30px] top-[217px] left-[150px] text-primary-orange font-poppins font-bold uppercase text-lg"
+          >
+            Best destinations around the world
+          </p>
+
+          <h1
+            class="w-[545px] h-[267px] top-[271px] left-[150px] font-bold text-[84px] leading-[80px] text-primary-blue font-volkhov tracking-[-0.04em]"
+          >
+            <span class="inline-flex items-baseline">
+              <span>Travel,&nbsp;</span>
+              <span class="relative inline-block">
+                <span class="relative z-10">enjoy</span>
+                <img
+                  src="./assets/images/decore3.png"
+                  alt="Underline"
+                  class="absolute left-0 bottom-0 z-0 min-w-full h-[12px]"
+                />
+              </span>
+            </span>
+            <br />
+            and live a new<br />
+            and full life
+          </h1>
+
+          <p
+            class="w-[477px] h-[90px] top-[568px] left-[148px] text-text-gray font-poppins leading-[30px] text-[16px] max-w-md text-base"
+          >
+            Built Wicket longer admire do barton vanity itself do in it.
+            Preferred to sportsmen it engrossed listening. Park gate sell they
+            west hard for the.
+          </p>
+
+          <div class="flex items-center space-x-6 pt-4 w-[379px] h-[60px]">
+            <button
+              class="bg-primary-yellow text-white px-8 py-4 rounded-[10px] font-poppins font-medium hover:bg-yellow-500 transition-colors shadow-lg"
+            >
+              Find out more
+            </button>
+            <button class="flex items-center space-x-3 group">
+              <div
+                class="w-12 h-12 bg-primary-orange rounded-full flex items-center justify-center text-white group-hover:bg-orange-600 transition-colors shadow-lg"
+              >
+                <svg
+                  class="w-6 h-6 ml-1"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M8 5v14l11-7z" />
+                </svg>
+              </div>
+              <span class="text-text-gray font-poppins font-medium"
+                >Play Demo</span
+              >
+            </button>
+          </div>
+        </div>
+
+        <!-- Right Content -->
+        <div class="w-full md:w-1/2 relative mt-10 md:mt-0">
+          <img
+            src="./assets/images/traveller.png"
+            alt="Traveler"
+            class="relative z-10 max-w-full left-[-25px]"
+          />
+          <img
+            src="./assets/images/aeroplane.png"
+            class="w-[86px] h-auto absolute top-[30px] left-[120px] -rotate-[1deg]"
+          />
+          <img
+            src="./assets/images/aeroplane.png"
+            class="w-[86px] h-auto absolute top-[75px] left-[500px] -rotate-[1deg]"
+          />
+        </div>
+      </section>
+    </main>
+
+    <!-- Features -->
+    <section
+      class="w-[1228px] h-[525px] top-[966px] left-[154px] mx-auto mt-4 py-20 px-4 text-center"
+    >
+      <!-- BG image -->
+      <img
+        src="./assets/images/design.png"
+        alt="design"
+        class="absolute left-[1300px] top-[810px]"
+      />
+      <!-- Section heading -->
+      <p
+        class="w-[98px] h-[27px] top-[964px] left-[652px] font-poppins text-[18px] uppercase text-text-gray font-semibold leading-[100%] mx-auto text-sm mb-2"
+      >
+        Category
+      </p>
+      <h2
+        class="w-[547px] h-[65px] top-[1011px] left-[428px] text-[50px] font-volkhov font-semibold capitalize text-[#14183E] mx-auto mb-16"
+      >
+        We Offer Best Services
+      </h2>
+
+      <!-- Services grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Card 1 -->
+        <div
+          class="w-[190px] h-[227px] flex flex-col items-center text-center space-y-4 px-4 relative"
+        >
+          <img
+            src="./assets/images/satellite-dish.png"
+            alt="satellite-dish"
+            class="w-[66.74px] h-[70px]"
+          />
+          <div
+            class="absolute w-[50px] h-[49px] top-[10px] left-[108px] z-[-1] bg-[#FFF1DA] rounded-tl-[18px] rounded-tr-[10px] rounded-bl-[5px] rounded-br-[5px] rotate-[180deg]"
+          ></div>
+          <h3 class="text-[20px] font-semibold text-[#1E1D4C] font-sans">
+            Calculated Weather
+          </h3>
+          <p class="text-[#5E6282] text-sm">
+            Built Wicket longer admire do barton <br />
+            vanity itself do in it.
+          </p>
+        </div>
+
+        <!-- Card 2 - Highlighted -->
+        <div
+          class="flex flex-col w-[267px] h-[314px] items-center text-center space-y-4 px-4 bg-white rounded-2xl relative"
+          style="
+            box-shadow: 0px 1.85px 3.15px #00000001, 0px 8.15px 6.52px #00000002,
+              0px 20px 13px #00000003, 0px 38.52px 25.48px #00000003,
+              0px 64.81px 46.85px #00000004, 0px 100px 80px #00000005;
+          "
+        >
+          <!-- Extra shape -->
+          <img
+            src="./assets/images/plane.png"
+            alt="plane"
+            class="w-[137.29px] h-auto z-[2] -rotate-[0deg] -mt-8"
+          />
+          <div
+            class="absolute w-[50px] h-[49px] z-[1] top-[-25px] left-[100px] bg-[#FFF1DA] rounded-tl-[18px] rounded-tr-[10px] rounded-bl-[5px] rounded-br-[5px]"
+          ></div>
+
+          <!-- <div class="bg-[#FFF1DA] p-4 rounded-[1.25rem] z-10 relative"></div> -->
+          <h3 class="text-[20px] font-semibold text-[#1E1D4C] font-sans">
+            Best Flights
+          </h3>
+          <p class="text-[#5E6282] text-sm z-10 relative">
+            Engrossed listening. <br />
+            Park gate sell they <br />
+            west hard for the.
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div
+          class="w-[181px] h-[229px] flex flex-col items-center text-center space-y-4 px-4 relative"
+        >
+          <img
+            src="./assets/images/mice.png"
+            alt="Mice"
+            class="w-[30px] h-auto"
+          />
+          <div
+            class="absolute w-[50px] h-[49px] -top-[30px] left-[90px] z-[-1] bg-[#FFF1DA] rounded-tl-[18px] rounded-tr-[10px] rounded-bl-[5px] rounded-br-[5px] rotate-[90deg]"
+          ></div>
+
+          <h3 class="text-[20px] font-semibold text-[#1E1D4C] font-sans">
+            Local Events
+          </h3>
+          <p class="text-[#5E6282] text-sm">
+            Barton vanity itself do in it. Preferred to men <br />it engrossed
+            listening.
+          </p>
+        </div>
+
+        <!-- Card 4 -->
+        <div
+          class="w-[181px] h-[216px] flex flex-col items-center text-center space-y-4 px-4 relative"
+        >
+          <img
+            src="./assets/images/setting.png"
+            alt="Setting"
+            class="w-[40px] h-auto mt-2"
+          />
+          <div
+            class="absolute w-[50px] h-[49px] -top-[1px] left-[85px] z-[-1] bg-[#FFF1DA] rounded-tl-[18px] rounded-tr-[10px] rounded-bl-[5px] rounded-br-[5px] rotate-[270deg]"
+          ></div>
+
+          <h3 class="text-[20px] font-semibold text-[#1E1D4C] font-sans">
+            Customization
+          </h3>
+          <p class="text-[#5E6282] text-sm">
+            We deliver outsourced aviation services for military customers
+          </p>
+        </div>
+        <div
+          class="absolute w-[100px] h-[100px] top-[1245px] left-[430px] bg-[#DF6951] rounded-tl-[30px] rounded-br-[10px] z-[-1]"
+        ></div>
+      </div>
+    </section>
+
+    <!-- Destination Section -->
+    <section
+      class="w-[1102px] h-[617px] py-16 mt-28 mx-auto px-4 md:px-20 bg-white"
+    >
+      <div class="text-center mb-14">
+        <p class="text-[18px] font-poppins font-semibold text-[#5E6282]">
+          Top Selling
+        </p>
+        <h2
+          class="text-[50px] font-volkhov md:text-4xl font-bold text-[#14183E] leading-[100%]"
+        >
+          Top Destinations
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-[80px] mt-10">
+        <!-- Card 1 -->
+        <div
+          class="w-[315px] h-[457px] rounded-[24px] overflow-hidden shadow-lg bg-white"
+        >
+          <img
+            src="./assets/images/dest-1.png"
+            alt="Rome"
+            class="w-full h-[350px] object-cover"
+          />
+          <div class="p-6 space-y-4">
+            <div
+              class="flex justify-between font-poppins text-[#5E6282] font-medium text-[18px] leading-[125%]"
+            >
+              <span>Rome, Italy</span>
+              <span>$5.42k</span>
+            </div>
+            <div
+              class="flex items-center text-[#5E6282] text-[16px] font-[400]"
+            >
+              <img
+                src="./assets/images/navigation.png"
+                alt="icon"
+                class="w-4 h-4 mr-2"
+              />
+              <span>10 Days Trip</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div
+          class="w-[315px] h-[457px] rounded-[24px] overflow-hidden shadow-lg bg-white"
+        >
+          <img
+            src="./assets/images/dest-2.jpg"
+            alt="London"
+            class="w-full h-[350px] object-cover"
+          />
+          <div class="p-6 space-y-4">
+            <div
+              class="flex justify-between font-poppins text-[#5E6282] font-medium text-[18px] leading-[125%]"
+            >
+              <span>London, UK</span>
+              <span>$4.2k</span>
+            </div>
+            <div
+              class="flex items-center text-[#5E6282] text-[16px] font-[400]"
+            >
+              <img
+                src="./assets/images/navigation.png"
+                alt="icon"
+                class="w-4 h-4 mr-2"
+              />
+              <span>12 Days Trip</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div
+          class="w-[315px] h-[457px] rounded-[24px] overflow-hidden shadow-lg bg-white"
+        >
+          <img
+            src="./assets/images/dest-3.png"
+            alt="Europe"
+            class="w-full h-[350px] object-cover"
+          />
+          <div class="p-6 space-y-4">
+            <div
+              class="flex justify-between font-poppins text-[#5E6282] font-medium text-[18px] leading-[125%]"
+            >
+              <span>Full Europe</span>
+              <span>$15k</span>
+            </div>
+            <div
+              class="flex items-center text-[#5E6282] text-[16px] font-[400]"
+            >
+              <img
+                src="./assets/images/navigation.png"
+                alt="icon"
+                class="w-4 h-4 mr-2"
+              />
+              <span>28 Days Trip</span>
+            </div>
+            <!-- bg Design -->
+            <img
+              src="./assets/images/design2.png"
+              alt="design"
+              class="absolute z-[1] w-[96px] h-[252px] top-[1750px] right-[130px]"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Next trip section -->
+    <section class="w-[1114px] h-[492px] flex flex-row my-40 mb-20 mx-auto">
+      <!-- Left Side -->
+      <div class="w-1/2 flex flex-col justify-center space-y-6 pr-8">
+        <p
+          class="text-[18px] font-poppins text-[#5E6282] font-semibold -mb-[20px]"
+        >
+          Easy and Fast
+        </p>
+        <h3 class="text-[50px] font-bold font-volkhov text-[#14183E] space-y-2">
+          Book Your Next Trip<br />In 3 Easy Steps
+        </h3>
+
+        <!-- Step 1 -->
+        <div class="flex items-start space-x-4">
+          <img
+            src="./assets/images/Group-7.png"
+            alt="Choose destination image"
+            class="w-[47px] h-[48px]"
+          />
+          <div>
+            <p
+              class="text-[#5E6282] font-bold font-poppins leading-[125%] size-[16px]"
+            >
+              Choose Destination
+            </p>
+            <p
+              class="text-[#5E6282] font-[400] font-poppins leading-[125%] size-[16px]"
+            >
+              Lorem ipsum dolor sit amet, consectetur<br />
+              adipiscing elit. Urna, tortor tempus.
+            </p>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="flex items-start space-x-4">
+          <img
+            src="./assets/images/Group-11.png"
+            alt="make payment image"
+            class="w-[47px] h-[48px]"
+          />
+          <div>
+            <p
+              class="text-[#5E6282] font-bold font-poppins leading-[125%] size-[16px]"
+            >
+              Make Payment
+            </p>
+            <p
+              class="text-[#5E6282] font-[400] font-poppins leading-[125%] size-[16px]"
+            >
+              Lorem ipsum dolor sit amet, consectetur<br />
+              adipiscing elit. Urna, tortor tempus.
+            </p>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="flex items-start space-x-4">
+          <img
+            src="./assets/images/Group-12.png"
+            alt="reach airport image"
+            class="w-[47px] h-[48px]"
+          />
+          <div>
+            <p
+              class="text-[#5E6282] font-bold font-poppins leading-[125%] size-[16px]"
+            >
+              Reach Airport on Selected Date
+            </p>
+            <p
+              class="text-[#5E6282] font-[400] font-poppins leading-[125%] size-[16px]"
+            >
+              Lorem ipsum dolor sit amet, consectetur<br />
+              adipiscing elit. Urna, tortor tempus.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Side -->
+      <div class="w-[370px] h-[400px] flex items-end justify-end relative">
+        <!-- Background Blur Shadow -->
+        <div
+          class="absolute left-[100px] bottom-[100px] w-[300px] h-[300px] bg-[#59B1E6] opacity-30 blur-[40px] rounded-full z-0"
+        ></div>
+
+        <!-- Trip Card -->
+        <div class="bg-white rounded-[26px] shadow-lg w-[300px] h-[350px] z-10">
+          <img
+            src="./assets/images/greece.jpg"
+            alt="Greece"
+            class="w-[321px] h-[161px] px-5 py-4 object-cover object-center rounded-[40px]"
+          />
+          <div class="p-4">
+            <p class="text-[#14183E] font-semibold">Trip To Greece</p>
+            <p class="text-[#5E6282] text-sm mt-1">
+              14-29 June &nbsp;&nbsp; by Robbin joseph
+            </p>
+
+            <div class="flex space-x-3 mt-6 mb-3">
+              <img
+                src="./assets/images/leaf-icon.png"
+                alt="icon"
+                class="w-8 h-8"
+              />
+              <img
+                src="./assets/images/map-icon.png"
+                alt="icon"
+                class="w-8 h-8"
+              />
+              <img
+                src="./assets/images/send-icon.png"
+                alt="icon"
+                class="w-8 h-8"
+              />
+            </div>
+
+            <div class="flex items-center justify-between">
+              <div class="flex items-center space-x-2 text-[#5E6282] text-sm">
+                <img
+                  src="./assets/images/building-icon.png"
+                  alt="people icon"
+                  class="w-5 h-5"
+                />
+                <span>24 people going</span>
+              </div>
+              <img
+                src="./assets/images/heart-icon.png"
+                alt="like"
+                class="w-5 h-5"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Ongoing Tag -->
+        <div
+          class="absolute left-[245px] bottom-[80px] bg-white rounded-2xl shadow-md px-4 py-3 w-[230px] z-20"
+        >
+          <div class="flex items-center space-x-3">
+            <img
+              src="./assets/images/hotel.png"
+              alt="rome"
+              class="w-10 h-10 object-cover rounded-full"
+            />
+            <div>
+              <p class="text-xs text-[#84829A] font-semibold">Ongoing</p>
+              <p class="text-sm font-medium text-[#080809]">Trip to rome</p>
+              <p class="text-xs text-[#8A79DF] font-medium">40% completed</p>
+              <div class="w-full h-[5px] bg-[#F5F5F5] rounded-full mt-1">
+                <div class="h-full w-[40%] bg-[#8A79DF] rounded-full"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial section -->
+    <section class="bg-white flex justify-center items-center my-20">
+      <div
+        class="max-w-6xl w-full px-6 flex flex-col md:flex-row items-start justify-between relative"
+      >
+        <!-- Left Content -->
+        <div class="md:w-1/2 mb-10 md:mb-0">
+          <h4
+            class="text-[18px] font-semibold font-poppins text-[#5E6282] uppercase leading-[100%] tracking-wider"
+          >
+            Testimonials
+          </h4>
+          <h2
+            class="text-[50px] font-bold text-[#14183E] leading-[100%] capitalize font-volkhov mt-3"
+          >
+            What People Say<br />About Us.
+          </h2>
+          <div class="flex space-x-4 mt-20">
+            <!-- Active Dot -->
+            <span class="w-[12px] h-[12px] rounded-full bg-[#14183E]"></span>
+            <span class="w-[12px] h-[12px] rounded-full bg-[#E5E5E5]"></span>
+            <span class="w-[12px] h-[12px] rounded-full bg-[#E5E5E5]"></span>
+          </div>
+        </div>
+
+        <!-- Right Content (Testimonial Cards) -->
+        <div class="md:w-1/2 relative">
+          <!-- Top Active Card -->
+          <div
+            class="bg-white shadow-lg rounded-2xl p-6 pl-6 relative z-20 w-[420px]"
+          >
+            <!-- Avatar -->
+            <img
+              src="./assets/images/user-1.png"
+              alt="User"
+              class="w-[68px] h-[68px] object-cover rounded-full absolute -left-10 -top-8 border-4 border-white"
+            />
+            <!-- Quote -->
+            <p
+              class="text-[#5E6282] font-[400] font-poppins text-[16px] leading-[32px] mb-4 text-left items-start"
+            >
+              “On the Windows talking painted pasture yet its <br />
+              express parties use. Sure last upon he same as <br />
+              knew next. Of believed or diverted no.”
+            </p>
+            <p
+              class="text-[#14183E] font-[600] font-poppins text-[18px] leading-[100%] mt-12"
+            >
+              Mike taylor
+            </p>
+            <p
+              class="text-[#5E6282] font-[400] font-poppins text-[16px] leading-[100%] mt-2"
+            >
+              Lahore, Pakistan
+            </p>
+          </div>
+
+          <!-- Background Card -->
+          <div
+            class="bg-white rounded-2xl p-6 absolute top-[220px] left-16 shadow-md w-[502px] h-[] opacity-60 z-10"
+          >
+            <p class="text-[#14183E] font-[600] font-poppins text-[18px]">
+              Chris Thomas
+            </p>
+            <p class="text-[#5E6282] font-[400] font-poppins text-[16px]">
+              CEO of Red Button
+            </p>
+          </div>
+
+          <!-- Arrows -->
+          <div class="absolute -right-10 top-10 flex flex-col space-y-2 z-30">
+            <!-- Up Arrow -->
+            <button
+              class="w-6 h-6 flex items-center justify-center text-[16px] text-[#C5C5C5]"
+            >
+              ▲
+            </button>
+
+            <!-- Down Arrow -->
+            <button
+              class="w-6 h-6 flex items-center justify-center text-[16px] text-[#5E6282]"
+            >
+              ▼
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Logos -->
+    <section class="py-[100px] bg-white">
+      <div
+        class="max-w-6xl mx-auto flex justify-between items-center gap-4 px-4"
+      >
+        <!-- Logo 1 -->
+        <img
+          src="./assets/images/axon.png"
+          alt="Axon Airlines"
+          class="w-[130px] h-[130px] object-contain grayscale"
+        />
+
+        <!-- Logo 2 -->
+        <img
+          src="./assets/images/jetstar.png"
+          alt="Jetstar"
+          class="w-[172.86px] h-[110px] object-contain grayscale"
+        />
+
+        <!-- Center Logo with highlight -->
+        <div class="w-[241px] h-[86px] bg-white px-6 rounded-xl shadow-md">
+          <img
+            src="./assets/images/expedia.png"
+            alt="Expedia"
+            class="w-[162px] h-[162px] object-contain -mt-8 ml-4"
+          />
+        </div>
+
+        <!-- Logo 4 -->
+        <img
+          src="./assets/images/qantas.png"
+          alt="Qantas"
+          class="w-[162px] h-[32px] object-contain grayscale"
+        />
+
+        <!-- Logo 5 -->
+        <img
+          src="./assets/images/alitalia.png"
+          alt="Alitalia"
+          class="w-[94px] h-[21px] object-contain grayscale"
+        />
+      </div>
+    </section>
+
+    <!-- subscribe section -->
+    <section
+      class="relative max-w-6xl h-[325px] mb-[100px] bg-[#f8f8ff] rounded-3xl mx-auto overflow-hidden"
+    >
+      <!-- Top-right Paper Plane Icon -->
+      <div class="absolute top-0 right-0 -mt-6 -mr-6">
+        <div
+          class="bg-gradient-to-tr from-[#5f72ff] to-[#9b3cff] w-14 h-14 rounded-[50%] flex items-center justify-center shadow-lg"
+        >
+          <svg
+            class="w-6 h-6 text-white"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M10.5 12.75l7.5-7.5M3 21l19.5-19.5M3 21l6.75-2.25 2.25-6.75"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+      </div>
+
+      <!-- Decorative Background Circles -->
+      <div class="absolute left-14 top-44">
+        <img
+          src="./assets/images/design4.png"
+          alt="decoration"
+          class="w-48 opacity-10 rotate-[90deg]"
+        />
+      </div>
+      <div class="absolute right-0 top-0">
+        <img
+          src="./assets/images/design4.png"
+          alt="decoration"
+          class="w-48 opacity-10"
+        />
+      </div>
+
+      <!-- Main Content -->
+      <div class="text-center max-w-3xl mx-auto">
+        <h2
+          class="text-2xl sm:text-3xl font-poppins font-semibold text-[#5E6282] mt-16 mb-16"
+        >
+          Subscribe to get information, latest news and other <br />
+          interesting offers about <span class="font-bold">Jadoo</span>
+        </h2>
+
+        <!-- Input and Button -->
+        <form
+          class="flex flex-col sm:flex-row items-center justify-center gap-4"
+        >
+          <div class="relative">
+            <input
+              type="email"
+              placeholder="Your email"
+              class="w-[421px] pl-10 pr-4 py-3 rounded-xl text-[12px] border border-gray-200 focus:outline-none"
+            />
+            <svg
+              class="absolute left-3 top-3 w-5 h-5 text-gray-400"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path d="M4 4h16v16H4z" fill="none" />
+              <path
+                d="M22 6l-10 7L2 6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+
+          <button
+            type="submit"
+            class="bg-gradient-to-r from-[#FF946D] to-[#FF7D68] font-google-sans text-[15px] text-white px-6 py-3 rounded-xl shadow-md hover:opacity-90"
+          >
+            Subscribe
+          </button>
+        </form>
+      </div>
+      <img
+        src="./assets/images/design.png"
+        alt="design"
+        class="absolute right-0 z-[1]"
+      />
+    </section>
+
+    <!-- footer -->
+    <footer
+      class="max-w-6xl mx-auto bg-white pt-20 pb-10 px-4 sm:px-10 font-poppins text-[#5E6282]"
+    >
+      <div
+        class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-10"
+      >
+        <!-- Logo and Description -->
+        <div class="md:col-span-1">
+          <h2
+            class="text-[44px] leading-[100%] font-bold text-[#181E4B] mb-4 font-poppins"
+          >
+            Jadoo.
+          </h2>
+          <p class="text-[13px] font-[400] leading-[125%]">
+            Book your trip in minute, get full <br />
+            control for much longer.
+          </p>
+        </div>
+
+        <!-- Company -->
+        <div>
+          <h3 class="font-semibold text-[#181E4B] mb-4">Company</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Mobile</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div>
+          <h3 class="font-semibold text-[#181E4B] mb-4">Contact</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#">Help/FAQ</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Affiliates</a></li>
+          </ul>
+        </div>
+
+        <!-- More -->
+        <div>
+          <h3 class="font-semibold text-[#181E4B] mb-4">More</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#">Airlinefees</a></li>
+            <li><a href="#">Airline</a></li>
+            <li><a href="#">Low fare tips</a></li>
+          </ul>
+        </div>
+
+        <!-- Social + App Links -->
+        <div class="flex flex-col items-center md:items-start space-y-5">
+          <!-- Social Icons -->
+          <div class="flex items-center space-x-4">
+            <!-- Facebook Icon -->
+            <a
+              href="#"
+              class="bg-white p-3 rounded-full shadow-lg hover:shadow-xl hover:scale-110 transition-all duration-300"
+            >
+              <i
+                class="fab fa-facebook-f text-blue-600 text-lg w-5 h-5 flex items-center justify-center"
+              ></i>
+            </a>
+
+            <!-- Instagram Icon with Gradient -->
+            <a
+              href="#"
+              class="bg-gradient-to-tr from-pink-400 via-purple-500 to-yellow-400 p-3 rounded-full shadow-lg hover:shadow-xl hover:scale-110 transition-all duration-300"
+            >
+              <i
+                class="fab fa-instagram text-white text-lg w-5 h-5 flex items-center justify-center"
+              ></i>
+            </a>
+
+            <!-- Twitter Icon -->
+            <a
+              href="#"
+              class="bg-white p-3 rounded-full shadow-lg hover:shadow-xl hover:scale-110 transition-all duration-300"
+            >
+              <i
+                class="fab fa-twitter text-blue-400 text-lg w-5 h-5 flex items-center justify-center"
+              ></i>
+            </a>
+          </div>
+
+          <!-- Discover Text -->
+          <p class="text-[#5E6282] text-[18px] font-semibold">
+            Discover our app
+          </p>
+
+          <!-- App Store Buttons -->
+          <div class="flex space-x-3">
+            <img
+              src="./assets/images/google-play.png"
+              alt="Google Play"
+              class="h-10 w-auto"
+            />
+            <img
+              src="./assets/images/app-store.png"
+              alt="App Store"
+              class="h-10 w-auto"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer bottom text -->
+      <div class="text-center text-sm text-[#5E6282] mt-10">
+        All rights reserved@jadoo.co
+      </div>
+    </footer>
+  </body>
+</html>
