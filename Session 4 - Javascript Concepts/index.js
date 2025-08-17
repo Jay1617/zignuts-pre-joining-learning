@@ -58,19 +58,42 @@
 //   b();
 //   function b(){
 //     console.log(c);
-    
+
 //   }
 // }
 // a();
 // var c = 20;
 
-function x(){
-  for(let i=1; i<=5; i++){
-    setTimeout(function (){
-      console.log(i);
-    }, i*1000);
-  }
-  console.log("Hey");
-}
+// function x(){
+//   for(let i=1; i<=5; i++){
+//     setTimeout(function (){
+//       console.log(i);
+//     }, i*1000);
+//   }
+//   console.log("Hey");
+// }
 
+// x();
+// console.log("Start");
+
+// function clickBtnEvent() {
+//   let cnt = 0;
+//   document.getElementById("btn").addEventListener("click", function () {
+//     {
+//       console.log("Clicked", ++cnt);
+//     }
+//   });
+// }
+// clickBtnEvent();
+// console.log("End");
+
+// const arr = [1, 2, 3, 4, 5];
+
+// console.log(arr.map((a) => a * 2));
+// console.log(arr.filter((a) => a % 2));
+function x(){
+    console.log("x called");
+
+    x();
+}
 x();
