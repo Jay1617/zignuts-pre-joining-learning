@@ -91,9 +91,18 @@
 
 // console.log(arr.map((a) => a * 2));
 // console.log(arr.filter((a) => a % 2));
-function x(){
-    console.log("x called");
+// function x(){
+//     console.log("x called");
 
-    x();
+//     x();
+// }
+// x();
+async function x(){
+    console.log("X Called");
+}
+function y(){
+    console.log("Y called");
+    
 }
 x();
+y();
