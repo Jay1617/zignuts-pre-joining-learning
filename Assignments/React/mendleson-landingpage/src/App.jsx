@@ -15,17 +15,29 @@ function App() {
     <>
       <Home />
       <About />
-      <img src={assets5} alt="Assets-5" className="absolute w-[320px]" />
+      <img 
+        src={assets5} 
+        alt="Assets-5" 
+        className="hidden lg:block absolute w-[320px]" 
+      />
       <Services />
-      <img src={assets5} alt="Assets-5" className="absolute w-[320px]" />
+      <img 
+        src={assets5} 
+        alt="Assets-5" 
+        className="hidden lg:block absolute w-[320px]" 
+      />
       <Team />
       <img
         src={assets8}
         alt="Assets-8"
-        className="absolute w-[320px] right-0"
+        className="hidden lg:block absolute w-[320px] right-0"
       />
       <Projects />
-      <img src={assets9} alt="Assets-9" className="absolute w-[150px]" />
+      <img 
+        src={assets9} 
+        alt="Assets-9" 
+        className="hidden lg:block absolute w-[150px]" 
+      />
       <Clients />
       <Footer />
     </>

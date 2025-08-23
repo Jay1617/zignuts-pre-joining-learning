@@ -9,26 +9,26 @@ import assets8 from "../assets/assets-8.png";
 
 const Services = () => {
   return (
-    <div className="w-full flex flex-col items-center px-10 mt-20 relative">
+    <div className="w-full flex flex-col items-center px-4 lg:px-10 mt-12 lg:mt-20 relative">
       {/* BG images */}
       <img
         src={assets6}
         alt="Assets-6"
-        className="absolute bottom-1/2 right-0 w-[200px] opacity-100 pointer-events-none"
+        className="hidden lg:block absolute bottom-1/2 right-0 w-[200px] opacity-100 pointer-events-none"
       />
       <img
         src={assets7}
         alt="Assets-7"
-        className="absolute top-1/2 left-0 w-[250px] opacity-100 pointer-events-none"
+        className="hidden lg:block absolute top-1/2 left-0 w-[250px] opacity-100 pointer-events-none"
       />
       <img
         src={assets8}
         alt="Assets-8"
-        className="absolute bottom-0 right-0 w-[300px] opacity-100 pointer-events-none"
+        className="hidden lg:block absolute bottom-0 right-0 w-[300px] opacity-100 pointer-events-none"
       />
-      {/* Heading */}
-      <div className="text-center mb-16">
-        <h2 className="font-[rubik] font-[500] leading-[100%] text-4xl text-[#000000] uppercase">
+
+      <div className="text-center mb-8 lg:mb-16">
+        <h2 className="font-[rubik] font-[500] leading-[100%] text-2xl md:text-3xl lg:text-4xl text-[#000000] uppercase">
           Services
         </h2>
         <div className="flex justify-center items-center mt-2">
@@ -37,112 +37,118 @@ const Services = () => {
         </div>
       </div>
 
-      <div className="flex flex-col gap-20 w-full max-w-[950px]">
+      <div className="flex flex-col gap-12 lg:gap-20 w-full max-w-[950px]">
         {/* Engagement */}
-        <div className="flex flex-row justify-between items-center">
-          <div className="max-w-[600px]">
-            <h2 className="font-[rubik] font-[500] text-3xl text-[#000000] mb-4 uppercase text-right">
+        <div className="flex flex-col lg:flex-row justify-between items-center gap-6">
+          <div className="max-w-full lg:max-w-[600px] order-2 lg:order-1">
+            <h2 className="font-[rubik] font-[500] text-xl md:text-2xl lg:text-3xl text-[#000000] mb-4 uppercase text-center lg:text-right">
               Engagement
             </h2>
-            <p className="font-[rubik] font-[400] text-[#2C2C2C] leading-[148%] text-right">
+            <p className="font-[rubik] font-[400] text-[#2C2C2C] leading-[148%] text-center lg:text-right text-sm md:text-base">
               We love what we do and are driven by achieving great results for
-              our <br /> clients. Our awards and impressive client list are
-              testament to our high <br /> quality approach. We deliver value,
-              creaKvity, results and excepKonal <br /> levels of customer
-              service and professionalism. We specialise in <br />{" "}
-              infrastructure development, energy and natural resources.
+              our clients. Our awards and impressive client list are testament
+              to our high quality approach. We deliver value, creativity,
+              results and exceptional levels of customer service and
+              professionalism. We specialise in infrastructure development,
+              energy and natural resources.
             </p>
           </div>
-          <div className="flex-shrink-0">
-            <img src={EngagementImg} alt="Engagement" className="w-[350px]" />
-          </div>
-        </div>
-
-        {/* Communications */}
-        <div className="flex flex-row-reverse justify-between items-center gap-10">
-          <div className="max-w-[600px]">
-            <h2 className="font-[rubik] font-[500] text-3xl text-[#000000] mb-4 uppercase">
-              Communications
-            </h2>
-            <p className="font-[rubik] font-[400] text-[#2C2C2C] leading-[148%]">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />{" "}
-              Faucibus quam quis egestas orci. Scelerisque eu, vitae <br />{" "}
-              sapien, pellentesque et. Sit ac fames facilisis nibh <br />{" "}
-              faucibus.
-            </p>
-          </div>
-          <div className="flex-shrink-0">
+          <div className="flex-shrink-0 order-1 lg:order-2">
             <img
-              src={CommunicationsImg}
-              alt="Communications"
-              className="w-[350px]"
+              src={EngagementImg}
+              alt="Engagement"
+              className="w-[250px] md:w-[300px] lg:w-[350px] mb-4 lg:mb-0 lg:ml-8"
             />
           </div>
         </div>
 
-        {/* Facilitation */}
-        <div className="flex flex-row justify-between items-center gap-10">
-          <div className="max-w-[600px]">
-            <h2 className="font-[rubik] font-[500] text-3xl text-[#000000] mb-4 uppercase text-right">
-              Facilitation
+        {/* Communications */}
+        <div className="flex flex-col lg:flex-row justify-between items-center gap-6 lg:gap-10">
+          <div className="flex-shrink-0 order-1 lg:order-1">
+            <img
+              src={CommunicationsImg}
+              alt="Communications"
+              className="w-[250px] md:w-[300px] lg:w-[350px] mb-4 lg:mb-0 lg:mr-8"
+            />
+          </div>
+          <div className="max-w-full lg:max-w-[600px] order-2 lg:order-2">
+            <h2 className="font-[rubik] font-[500] text-xl md:text-2xl lg:text-3xl text-[#000000] mb-4 uppercase text-center lg:text-left">
+              Communications
             </h2>
-            <p className="font-[rubik] font-[400] text-[#2C2C2C] leading-[148%] text-right">
-              We love what we do and are driven by achieving great results for
-              our <br /> clients. Our awards and impressive client list are
-              testament to our high <br /> quality approach. We deliver value,
-              creaKvity, results and excepKonal <br /> levels of customer
-              service and professionalism. We specialise in <br />{" "}
-              infrastructure development, energy and natural resources.
+            <p className="font-[rubik] font-[400] text-[#2C2C2C] leading-[148%] text-center lg:text-left text-sm md:text-base">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus
+              quam quis egestas orci. Scelerisque eu, vitae sapien, pellentesque
+              et. Sit ac fames facilisis nibh faucibus.
             </p>
           </div>
-          <div className="flex-shrink-0">
+        </div>
+
+        {/* Facilitation */}
+        <div className="flex flex-col lg:flex-row justify-between items-center gap-6 lg:gap-10">
+          <div className="max-w-full lg:max-w-[600px] order-2 lg:order-1">
+            <h2 className="font-[rubik] font-[500] text-xl md:text-2xl lg:text-3xl text-[#000000] mb-4 uppercase text-center lg:text-right">
+              Facilitation
+            </h2>
+            <p className="font-[rubik] font-[400] text-[#2C2C2C] leading-[148%] text-center lg:text-right text-sm md:text-base">
+              We love what we do and are driven by achieving great results for
+              our clients. Our awards and impressive client list are testament
+              to our high quality approach. We deliver value, creativity,
+              results and exceptional levels of customer service and
+              professionalism. We specialise in infrastructure development,
+              energy and natural resources.
+            </p>
+          </div>
+          <div className="flex-shrink-0 order-1 lg:order-2">
             <img
               src={FacilitationImg}
               alt="Facilitation"
-              className="w-[350px]"
+              className="w-[250px] md:w-[300px] lg:w-[350px] mb-4 lg:mb-0 lg:ml-8"
             />
           </div>
         </div>
 
         {/* Consultation */}
-        <div className="flex flex-row-reverse justify-between items-center gap-10">
-          <div className="max-w-[600px]">
-            <h2 className="font-[rubik] font-[500] text-3xl text-[#000000] mb-4 uppercase">
-              Consultation and Research
-            </h2>
-            <p className="font-[rubik] font-[400] text-[#2C2C2C] leading-[148%]">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />{" "}
-              Faucibus quam quis egestas orci. Scelerisque eu, vitae <br />{" "}
-              sapien, pellentesque et. Sit ac fames facilisis nibh <br />{" "}
-              faucibus.
-            </p>
-          </div>
-          <div className="flex-shrink-0">
+        <div className="flex flex-col lg:flex-row justify-between items-center gap-6 lg:gap-10">
+          <div className="flex-shrink-0 order-1 lg:order-1">
             <img
               src={ConsultationImg}
               alt="Consultation"
-              className="w-[350px]"
+              className="w-[250px] md:w-[300px] lg:w-[350px] mb-4 lg:mb-0 lg:mr-8"
             />
+          </div>
+          <div className="max-w-full lg:max-w-[600px] order-2 lg:order-2">
+            <h2 className="font-[rubik] font-[500] text-xl md:text-2xl lg:text-3xl text-[#000000] mb-4 uppercase text-center lg:text-left">
+              Consultation and Research
+            </h2>
+            <p className="font-[rubik] font-[400] text-[#2C2C2C] leading-[148%] text-center lg:text-left text-sm md:text-base">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus
+              quam quis egestas orci. Scelerisque eu, vitae sapien, pellentesque
+              et. Sit ac fames facilisis nibh faucibus.
+            </p>
           </div>
         </div>
 
         {/* Training */}
-        <div className="flex flex-row justify-between items-center gap-10">
-          <div className="max-w-[600px]">
-            <h2 className="font-[rubik] font-[500] text-3xl text-[#000000] mb-4 uppercase text-right">
+        <div className="flex flex-col lg:flex-row justify-between items-center gap-6 lg:gap-10">
+          <div className="max-w-full lg:max-w-[600px] order-2 lg:order-1">
+            <h2 className="font-[rubik] font-[500] text-xl md:text-2xl lg:text-3xl text-[#000000] mb-4 uppercase text-center lg:text-right">
               Training & Mentoring
             </h2>
-            <p className="font-[rubik] font-[400] text-[#2C2C2C] leading-[148%] text-right">
+            <p className="font-[rubik] font-[400] text-[#2C2C2C] leading-[148%] text-center lg:text-right text-sm md:text-base">
               We love what we do and are driven by achieving great results for
-              our <br /> clients. Our awards and impressive client list are
-              testament to our high <br /> quality approach. We deliver value,
-              creaKvity, results and excepKonal <br /> levels of customer
-              service and professionalism. We specialise in <br />{" "}
-              infrastructure development, energy and natural resources.
+              our clients. Our awards and impressive client list are testament
+              to our high quality approach. We deliver value, creativity,
+              results and exceptional levels of customer service and
+              professionalism. We specialise in infrastructure development,
+              energy and natural resources.
             </p>
           </div>
-          <div className="flex-shrink-0">
-            <img src={TraningImg} alt="Training" className="w-[350px]" />
+          <div className="flex-shrink-0 order-1 lg:order-2">
+            <img
+              src={TraningImg}
+              alt="Training"
+              className="w-[250px] md:w-[300px] lg:w-[350px] mb-4 lg:mb-0 lg:ml-8"
+            />
           </div>
         </div>
       </div>
