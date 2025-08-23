@@ -8,6 +8,7 @@ import assets9 from "./assets/assets-9.png";
 import Team from "./components/Team";
 import Projects from "./components/Projects";
 import Clients from "./components/Clients";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -24,12 +25,9 @@ function App() {
         className="absolute w-[320px] right-0"
       />
       <Projects />
-      <img
-        src={assets9}
-        alt="Assets-9"
-        className="absolute w-[150px]"
-      />
+      <img src={assets9} alt="Assets-9" className="absolute w-[150px]" />
       <Clients />
+      <Footer />
     </>
   );
 }
