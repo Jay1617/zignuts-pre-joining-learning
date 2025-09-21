@@ -4,25 +4,25 @@ class University {
         this.departments = [];
     }
 
-    addDepartment(dept) {
+    add(dept) {
         this.departments.push(dept);
     }
 
-    removeDepartment(dept) {
+    remove(dept) {
         this.departments = this.departments.filter(d => d !== dept);
     }
 
-    displayDepartments() {
+    display() {
         console.log(`Departments in ${this.name}:`);
         this.departments.forEach(d => console.log(d));
     }
 }
 
 const uni = new University("ABC University");
-uni.addDepartment("Computer Science");
-uni.addDepartment("Mathematics");
-uni.addDepartment("Physics");
-uni.displayDepartments();
+uni.add("Computer Science");
+uni.add("Mathematics");
+uni.add("Physics");
+uni.display();
 
-uni.removeDepartment("Mathematics");
-uni.displayDepartments();
+uni.remove("Mathematics");
+uni.display();

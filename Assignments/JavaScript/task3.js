@@ -5,25 +5,25 @@ class Shape {
 }
 
 class Circle extends Shape {
-    constructor(radius) {
+    constructor(r) {
         super();
-        this.radius = radius;
+        this.r = r;
     }
 
     area() {
-        return Math.PI * this.radius * this.radius;
+        return Math.PI * this.r * this.r;
     }
 }
 
 class Triangle extends Shape {
-    constructor(base, height) {
+    constructor(b, h) {
         super();
-        this.base = base;
-        this.height = height;
+        this.b = b;
+        this.h = h;
     }
 
     area() {
-        return 0.5 * this.base * this.height;
+        return 0.5 * this.b * this.h;
     }
 }
 
